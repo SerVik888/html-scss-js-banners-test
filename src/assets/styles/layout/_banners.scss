@@ -1,0 +1,72 @@
+.banners {
+    padding: 1rem 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    &__title-wrapper {
+        width: 100%;
+        max-width: 19rem;
+        padding: 3rem 0;
+        line-height: 3rem;
+    }
+
+    &__title {
+        @include h1();
+    }
+
+    &__list {
+        width: 100%;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    &__list:last-child {
+        border-bottom: 1px solid #E6E6E6;
+    }
+
+    @media($small) {
+        & {
+            padding: 1rem 4rem;
+        }
+
+        &__title-wrapper {
+            max-width: 100%;
+            padding: 4rem 0;
+            line-height: 4.2rem;
+        }
+    }
+
+    @media($medium) {
+        & {
+            padding: 1.5rem 10.5rem;
+        }
+
+        &__title-wrapper {
+            padding: 4.6rem 0;
+        }
+    }
+
+    @media($large) {
+        & {
+            padding: 2rem 12rem;
+        }
+
+        &__title-wrapper {
+            padding: 5rem 0;
+            line-height: 4.8rem;
+        }
+    }
+
+    @media($extraLarge) {
+        & {
+            padding: 2rem 16rem;
+        }
+
+        &__title-wrapper {
+            padding: 8rem 0;
+            line-height: 6.4rem;
+        }
+    }
+}

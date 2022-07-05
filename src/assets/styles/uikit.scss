@@ -1,0 +1,35 @@
+@import './utils';
+@import './components';
+@import './layout';
+
+.uikit__wrapper {
+    padding: 1rem;
+}
+
+.divider {
+    height: 50px;
+}
+
+.container {
+    max-width: 1180px;
+    margin: auto;
+}
+
+.ui__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    text-decoration: underline;
+}
+
+.h1 {
+    @include h1();
+}
+
+.h3 {
+    @include h3();
+}
+
+.p1 {
+    @include p1();
+}
